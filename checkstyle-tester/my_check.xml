@@ -15,7 +15,6 @@
          <!-- <module name="NestedSwitchCheck"/> -->
          
          <!-- Example of checkstyle Check usage -->
-         <module name="AbstractClassName"/>
     </module>
 <!--
     <module name="SeverityMatchFilter">
@@ -23,4 +22,9 @@
         <property name="acceptOnMatch" value="false"/>
     </module>
 -->
+<module name="RegexpOnFilename">
+  <property name="folderPattern" value="[\\/]src[\\/]"/>
+  <property name="fileNamePattern" value="\\.(java|xml)$"/>
+  <property name="match" value="false"/>
+</module>
 </module>
